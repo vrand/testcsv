@@ -1,15 +1,14 @@
-from django.forms import forms
+from django.forms import ModelForm
 
 from fileupload.models import OrderFile, DeliveryFile
 
 
-class CompareFormClient(forms.Form):
+class CompareFormClient(ModelForm):
+    # title = forms.CharField()
+    # description = forms.CharField(widget = forms.Textarea)
     class Meta:
         model = OrderFile
-        fields = ["designation", "prix_total", ]
-
-
-class CompareFormTransporteur(forms.Form):
-    class Meta:
-        model = DeliveryFile
-        fields = ["designation", "prix_total", ]
+        fields = [
+            "ean",
+            "designation",
+        ]

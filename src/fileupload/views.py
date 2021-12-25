@@ -82,15 +82,8 @@ class HomeView(ListView):
     def get_queryset(self):
         return models.OrderFile.objects.all()
 
+
 class CompareView(FormView):
-    template_name = "fileupload/compare.html"
     form_class = CompareFormClient
     title = "Default"
-    context_object_name = "items"
-
-
-
-
-
-
-
+    template_name = "fileupload/compare.html"
