@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Title</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'posts:home' %}">Accueil</a>
+    <a href="{% url 'posts:compare' %}">Comparer des fichiers</a>
+</nav>
+<section id="comparaison">
+    {% block content %}
+    {% endblock %}
+</section>
+
+</body>
+</html>
