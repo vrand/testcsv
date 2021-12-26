@@ -1,11 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
 
 {% block title %}
   <title>Comparer les fichiers</title>
 {% endblock %}
 
+
+    {% block content %}
     <h1>Comparaison</h1>
+    <div id="formulaire">
+        <h2>Comparer les éléments</h2>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Tester">
+        <input type="submit" value="Comparer">
     </form>
+    </div>
+    {% endblock %}
+

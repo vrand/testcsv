@@ -87,3 +87,4 @@ class CompareView(FormView):
     form_class = CompareFormClient
     title = "Default"
     template_name = "fileupload/compare.html"
+    fields = ['ean', 'designation']
