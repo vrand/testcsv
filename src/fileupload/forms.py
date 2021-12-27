@@ -7,7 +7,7 @@ from fileupload.models import OrderFile, DeliveryFile
 class CompareFormClient(forms.ModelForm):
     class Meta:
         model = OrderFile
-        fields = ['ean', 'designation']
+        fields = ['origine']
 
     items = forms.ModelMultipleChoiceField(
         widget=FilteredSelectMultiple(

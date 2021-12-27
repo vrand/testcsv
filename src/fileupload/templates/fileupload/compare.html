@@ -8,14 +8,14 @@
 
 
     {% block content %}
-    <h1>Comparaison</h1>
     <div id="formulaire">
-        <h2>Comparer les éléments</h2>
-    <form method="post">
+        <h1>Comparer les éléments</h1>
+    <form method="post" id="formcompare">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Comparer">
     </form>
-    </div>
+        </div>
+
     {% endblock %}
 
