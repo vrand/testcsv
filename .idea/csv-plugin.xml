@@ -24,7 +24,28 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/files/file.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/files/proforma_commandes.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/files/proforma_commandes_gdWGQEi.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/files/proforma_transport.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
